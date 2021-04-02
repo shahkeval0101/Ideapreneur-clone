@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+h2{
+  text-align: center;
+  text-shadow: 5;
+  font-size: 4rem;
+}
+.button1 {
+  background-color: #1E90FF; /* Green */
+  width:20%;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10% 35% 8px 35% ;
+  cursor: pointer;
+}
+
+.button4 {
+  background-color: #1E90FF; /* Green */
+  width:20%;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 35% 8px 35% ;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 30px;}
+.button4 {border-radius: 30px;}
+
+body {
+  padding: 40px;
+}
+
+.glossy-button {
+  width:25%;
+  display: inline-block;
+  position: relative;
+  background-color: #AAA;
+  background-image: linear-gradient( /* chrome */
+    hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+    hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2)
+  );
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 20px 40px;
+  text-shadow:
+    0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
+    0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+  border: none;
+  border-radius: 50px;
+  margin: 10px;
+  box-shadow:
+    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+    inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+    /* multiple light sources yall */
+    -8px 8px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+    5px 18px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* highlight */
+.glossy-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 5px;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(
+    hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0) );
+}
+
+.glossy-button--blue { background-color: #19F; }
+.glossy-button--gold { background-color: #EA0; }
+.glossy-button--green { background-color: #6C6; }
+.glossy-button--red { background-color: #E21; }
+
+.glossy-button:hover {
+  transform: scale(1.05);
+  box-shadow:
+    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+    inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+    /* multiple light sources yall */
+    -12px 12px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+    10px 25px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+}
+</style>
+</head>
+<body>
+
+<h2 >What activity you would like to do</h2>
+
+
+<a href="first.php" class="button " >
+  <button class="glossy-button glossy-button--gold " style="margin:10% 35% 8px 35%;">
+    Insert</button>
+
+</a>
+
+<a href="delete.php" class="button " >
+  <button class="glossy-button glossy-button--red " style="  margin: 4px 35% 8px 35% ;">Delete</button>
+
+</a>
+
+
+
+
+</body>
+</html>

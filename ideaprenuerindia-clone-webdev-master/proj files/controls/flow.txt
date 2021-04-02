@@ -1,0 +1,36 @@
+Initially
+admin will go to Admin1.php file
+
+from there after filling details he will go to transfer.html
+
+on selecting insert or delete he will go to particular file(for insert=>first.html file and its php is admin-php.php)
+and he will fill data and return to the home page of the site (link is left to insert in the file).
+link to be inserted into window.location section of the admin-php.php which is at end.
+
+
+
+For users
+On loading site should go to the homepage
+
+
+home page will have two button login and registration
+code in file that is everywhere
+<?php
+ if (!$_SESSION['email']){
+ //login and registration button
+ }
+ else{
+ //two button of create and logout
+ }
+?>
+
+
+create will go to first.html directly
+
+if user clicks logout then
+and code for logout is below
+if(isset($_REQUEST['logout'])){
+	session_unset();
+	session_destroy();
+	echo"<script> location.href='login.php'</script>";
+}

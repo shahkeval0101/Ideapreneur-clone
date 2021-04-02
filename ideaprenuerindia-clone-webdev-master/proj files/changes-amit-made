@@ -1,0 +1,12 @@
+changes amit made:
+
+1. changed _SESSION['EMAIL'] TO isset(_session["emai"])
+
+2. WIll adding <
+  ?php
+	session_start();
+	require_once('config.php');
+?>
+    this to every file cause some error?4
+
+3. after create by admin.user it goes directly to homepage.Cane we have a lert too informing data unserted successfully
